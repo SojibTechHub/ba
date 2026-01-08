@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Figma অনুযায়ী ফন্ট */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* লোগো, মেনু ও বাটনকে তিন ভাগে ভাগ করবে */
+    align-items: center;
+    padding: 20px 120px;           /* Figma অনুযায়ী দুই পাশে 120px দূরত্ব */
+    background-color: #ffffff;
+    height: 92px;                  /* Figma অনুযায়ী উচ্চতা */
+}
+
+/* লোগো অংশ */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 40px; 
+    width: auto;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-logo {
+    color: #469165;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.logo-text p {
+    font-size: 10px;
+    color: #666;
+}
+
+/* মেনু অংশ - একদম সেন্টারে রাখার জন্য */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;                     /* মেনু আইটেমগুলোর মাঝখানের দূরত্ব */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #469165;
+}
+
+.btn-primary {
+    background-color: #469165;     
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;     /* মসৃণ পরিবর্তনের জন্য */
+}
+
+.btn-primary:hover {
+    background-color: #357a5b;     /* হোভার করলে একটু গাঢ় হবে */
+    transform: translateY(-2px);    /* হালকা উপরে উঠবে */
+    box-shadow: 0 4px 12px rgba(70, 145, 101, 0.3); /* গ্লো ইফেক্ট */
+}
